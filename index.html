@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="A short description...">
+  <meta name="author" content="Your Name">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <style type="text/css">
+    table.GeneratedTable {
+      width: 25%;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #ffffff;
+      border-collapse: collapse;
+      border-width: 2px;
+      border-color: #574500;
+      border-style: solid;
+      color: #000000;
+    }
+
+    table.GeneratedTable td,
+    table.GeneratedTable th {
+      border-width: 2px;
+      border-color: #574500;
+      border-style: solid;
+      padding: 3px;
+    }
+
+    table.GeneratedTable thead {
+      background-color: #fe6262;
+    }
+
+    body {
+      background-color: rgb(255, 193, 193);
+      text-align: center;
+    }
+
+    td {
+      border: 1px solid black
+    }
+  </style>
+</head>
+
+<p>Fun Trade Contact Information:</p>
+
+<address>
+  821 S Higgins Ave Missoula, MT 59801 <br>
+  <a href="mailto:imnotreal@rock.com">imnotreal@rock.com</a><br>
+  <a href="tel:+14063171112">(406) 317-1112</a>
+</address>
+
+<body>
+
+  <h1>Fun Trade</h1>
+
+  Hours of Operation
+  <table class="GeneratedTable">
+    <thead>
+      <tr>
+        <th>Day</th>
+        <th>Open</th>
+        <th>Close</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Monday</td>
+        <td>10:00 AM</td>
+        <td>9:00 PM</td>
+      </tr>
+      <tr>
+        <td>Tuesday</td>
+        <td>10:00 AM</td>
+        <td>9:00 PM</td>
+      </tr>
+      <tr>
+        <td>Wednsday</td>
+        <td>10:00 AM</td>
+        <td>9:00 PM</td>
+      </tr>
+      <tr>
+        <td>Thursday</td>
+        <td>10:00 AM</td>
+        <td>9:00 PM</td>
+      </tr>
+      <tr>
+        <td>Friday</td>
+        <td>10:00 AM</td>
+        <td>9:00 PM</td>
+      </tr>
+      <tr>
+        <td>Saturday</td>
+        <td>10:00 AM</td>
+        <td>9:00 PM</td>
+      </tr>
+      <tr>
+        <td>Sunday</td>
+        <td>11:00 AM</td>
+        <td>6:00 PM</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <br>
+
+  <form action="https://funtrade.com/comments.php" method="post">
+
+    If you would like to leave us a comment, fill in your name and number below. (Or leave those fields blank if you would like to remain anonymous)
+    <br>
+    First Name
+    <input type="text" name="firstname" maxlength="8">
+    Phone Number
+    <input type="text" name="lastname" maxlength="12">
+
+    <br><br>
+
+    Please write your comment in the section below: <br>
+    <textarea cols="40" rows="15" maxlength="500">
+      Comment... (Max 500)
+    </textarea>
+
+    <br><br>
+
+    <p>How likely are you to recommend Fun Trade?</p>
+    <input type="radio" name="happy" value="1" /> Very Unlikely 
+    <br />
+    <input type="radio" name="happy" value="2" /> Unlikely
+    <br />
+    <input type="radio" name="happy" value="3" /> Indifferent
+    <br />
+    <input type="radio" name="happy" value="4" /> Likely
+    <br />
+    <input type="radio" name="happy" value="5" /> Very Likely 
+
+    <br><br>
+
+    <input type="button" value="Submit">
+
+
+  </form>
+
+</body>
+
+</html>
